@@ -1,0 +1,26 @@
+.serviceSection {
+  font-size: 3rem;
+  margin-left: 20px;
+}
+
+.serviceItem {
+  opacity: 0;
+  transform: translateX(-20px); /* Start position for the animation */
+  animation-fill-mode: forwards; /* Make sure the element stays at the end position after animation */
+}
+
+.slideInFromLeft {
+  animation: slideIn 0.5s ease-out 0.5s forwards;
+}
+
+.slideInFromRight {
+  animation: slideIn 0.5s ease-out 1s forwards;
+}
+
+/* Keyframes for the slide-in effect */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

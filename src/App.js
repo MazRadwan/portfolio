@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header"; // Adjust the path as per your folder structure
+import HeroSlider from "./components/HeroSlider/HeroSlider";
+import ServiceSection from "./components/ServiceSection/ServiceSection";
+import TechScroll from "./components/TechScroll/TechScroll";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
+import ProjectsContainer from "./components/ProjectsContainer/ProjectsContainer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <HeroSlider />
+      <ServiceSection />
+      <TechScroll />
+      <ProjectsSection />
+      <ProjectsContainer />
     </div>
   );
-}
+};
 
 export default App;

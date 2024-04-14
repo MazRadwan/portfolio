@@ -1,0 +1,35 @@
+.scrollContainer {
+  overflow: hidden;
+  white-space: nowrap; /* Keep icons in a single line */
+}
+
+.scrollContent {
+  display: flex;
+  animation: scrollRight 30s linear infinite; /* Adjust time for speed */
+}
+
+.icon {
+  height: 100px; /* Adjust the height as needed */
+  width: auto; /* Width is auto to maintain aspect ratio */
+  margin: 0 5%; /* Adjust the spacing between icons */
+}
+
+/* Keyframes for the infinite scrolling effect */
+@keyframes scrollRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(
+      -100%
+    ); /* Move left the width of the original set of icons */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .icon {
+    height: 50px; /* Adjust the height as needed */
+    margin: 0 0.5%; /* Adjust the spacing between icons */
+  }
+}

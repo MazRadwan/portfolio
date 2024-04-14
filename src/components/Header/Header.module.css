@@ -1,0 +1,50 @@
+/* Header.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjust the padding as needed */
+  font-family: "Inter", sans-serif;
+}
+
+.logo {
+  font-weight: 600; /* Semibold for the logo */
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem; /* Spacing between nav links */
+}
+.navLink {
+  text-decoration: none;
+  color: #868686;
+  font-weight: 700; /* Bold for the links */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+.navLink:hover {
+  color: #51c2e0; /* Color change on hover */
+}
+
+/* For large screens */
+@media (min-width: 1024px) {
+  .navLinks {
+    justify-content: flex-end; /* Keep the links aligned to the right */
+    max-width: 1600px; /* Increase max-width to push the navLinks a bit to the left */
+    margin-right: auto; /* Adjust right margin to push container to the left */
+    margin-left: 70%; /* Or any other percentage or fixed value */
+  }
+}
+
+/* Small screens adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .navLinks {
+    flex-direction: column;
+    align-items: center; /* Center align the stacked nav links */
+    width: 100%; /* Full width for small screens */
+    margin-top: 20px;
+  }
+}
