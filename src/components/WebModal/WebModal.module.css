@@ -8,7 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(100%); /* Start below the view */
+  transition: transform 1.5s ease-out;
   z-index: 2000;
+}
+.modalOverlay.active {
+  transform: translateY(0); /* End at the modal's final position */
 }
 .modalContent {
   background-color: #fff;

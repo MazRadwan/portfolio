@@ -13,3 +13,7 @@
     align-items: center;
   }
 }
+.disableHover .uiuxBox:hover,
+.disableHover .webDesignBox:hover {
+  transform: none; /* Disable hover transforms when modal is open */
+}

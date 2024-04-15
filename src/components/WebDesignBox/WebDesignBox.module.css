@@ -6,7 +6,7 @@
   max-width: 600px;
   position: relative;
   margin: 10px;
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
   flex: 1 auto;
   height: 500px;
   width: 300px;
@@ -17,9 +17,12 @@
 
   /* ... other styles ... */
 }
-/* .webDesignBox:hover {
-  transform: translateY(-5px); /* Simple hover effect */
-
+.webDesignBox:hover {
+  transform: translateY(-5px);
+}
+.disableHover:hover {
+  transform: none;
+}
 .overlay {
   padding: 10px 10px 0; /* This adds space inside the overlay, adjust as needed */
   display: flex;

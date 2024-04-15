@@ -22,7 +22,7 @@ const WebModal = ({ close, isOpen }) => {
   if (!isOpen) return null; // Only render if isOpen is true
 
   return (
-    <div className={styles.modalOverlay}>
+    <div className={`${styles.modalOverlay} ${isOpen ? styles.active : ""}`}>
       <div className={styles.modalContent} ref={modalRef}>
         <WebModalContent close={close} />
       </div>

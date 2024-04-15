@@ -15,6 +15,7 @@ const App = () => {
       <TechScroll />
       <ProjectsSection />
       <ProjectsContainer />
+      <ServiceSection />
     </div>
   );
 };
