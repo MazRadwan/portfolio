@@ -1,0 +1,40 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Start as invisible */
+  visibility: hidden; /* Start as hidden */
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  z-index: 2000; /* Ensure this is above other content */
+}
+
+.modalOverlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContent {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 2000;
+  width: 80vw; /* 80% of the viewport width */
+  max-width: 600px; /* Maximum width */
+  height: auto; /* Height determined by content */
+  min-height: 300px; /* Minimum height */
+  /* Add any other necessary styling for the modal content */
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    width: 90vw; /* More width on smaller screens */
+    max-width: none;
+    padding: 10px; /* Adjust padding if necessary */
+  }
+}

@@ -1,76 +1,93 @@
-.modalContent {
+.contentWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Other necessary styles */
+  width: 100%;
 }
 
 .headerRow {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
   width: 100%;
-  /* Other necessary styles */
 }
 
 .modalTitle {
-  font-size: 3rem; /* Adjust as necessary */
+  font-size: 3rem; /* Adjust size as needed */
 }
 
 .closeButton {
-  /* Styles for your close button */
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
 .projectRow {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 1rem;
   width: 100%;
-  margin: 20px 0; /* Spacing between the rows */
 }
 
 .projectBox {
-  width: calc(50% - 20px); /* Adjust based on desired spacing */
+  width: calc(50% - 10px); /* Adjust gap */
   position: relative;
   border-radius: 15px;
-  /* Other necessary styles */
 }
 
-.projectBox img {
+.projectImage {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  display: block; /* Eliminates bottom margin/padding */
 }
 
 .projectOverlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to bottom */
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  /* Other necessary styles */
+  border-radius: 15px; /* If you want the overlay to also have rounded corners */
 }
 
 .projectTitle {
-  /* Styles for the title inside the overlay */
   color: white;
+  font-size: 2.5rem; /* Adjust font size as needed */
+  text-align: left;
+  margin: 0; /* Removes margin */
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
 }
 
 .previewButton {
-  border: 2px solid black; /* Adjust as necessary */
-  padding: 5px 10px; /* Adjust as necessary */
-  background-color: white; /* Adjust as necessary */
-  color: black; /* Adjust as necessary */
-  text-align: center; /* Adjust as necessary */
-  border-radius: 15px; /* Adjust as necessary */
-  margin-top: -3em; /* Adjust as necessary to position correctly */
-  align-self: center; /* Adjust as necessary */
-  /* Other necessary styles */
+  padding: 12px 5px; /* Sufficient padding for larger buttons */
+  background-color: white; /* Initial background color */
+  color: black; /* Initial text color */
+  font-size: 1.3rem; /* Font size as specified */
+  border-radius: 8px; /* Rounded corners as specified */
+  border: 2px solid black; /* Black border 2px as specified */
+  text-decoration: none; /* No underline on text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer;
+  display: block; /* Block display to set width and height */
+  width: 25%; /* Adjusted width to 65% as specified */
+  text-align: center; /* Center text inside button */
+  margin: 10px auto; /* Center button below image box, with space above */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
 }
 
 .previewButton:hover {
-  /* Styles for hover effect */
-  background-color: black; /* Adjust as necessary */
-  color: white; /* Adjust as necessary */
+  background-color: black; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-color: transparent; /* Border color on hover to 'hide' it */
 }

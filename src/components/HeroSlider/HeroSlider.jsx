@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./HeroSlider.module.css";
 import firstImage from "../../assets/slider-art.png";
 import secondImage from "../../assets/slider-food.png";
-import thirdImage from "../../assets/slider-food.png";
+import thirdImage from "../../assets/slider-lion.png";
 import fourthImage from "../../assets/slider-ss.png";
 
 const imageUrls = [firstImage, secondImage, thirdImage, fourthImage];
