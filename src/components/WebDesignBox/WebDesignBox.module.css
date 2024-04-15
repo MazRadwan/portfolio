@@ -3,27 +3,25 @@
   /* Remove the background-image property */
   background-size: cover;
   background-position: center;
-  max-width: 350px;
+  max-width: 600px;
   position: relative;
-  margin: 0 auto;
+  margin: 10px;
   transition: transform 0.3s;
-  flex: 0 1 auto;
-  height: 320px;
+  flex: 1 auto;
+  height: 500px;
   width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
-  overflow: hidden;
 
   /* ... other styles ... */
 }
-.webDesignBox:hover {
+/* .webDesignBox:hover {
   transform: translateY(-5px); /* Simple hover effect */
-}
 
 .overlay {
-  padding: 10px; /* This adds space inside the overlay, adjust as needed */
+  padding: 10px 10px 0; /* This adds space inside the overlay, adjust as needed */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -61,10 +59,14 @@
 .button:hover {
   background-color: #501e81;
 }
+.noHover:hover {
+  transform: none; /* This will disable the hover effect */
+}
 
 @media (max-width: 768px) {
   .webDesignBox {
     width: 100%; /* Full width on smaller screens */
-    margin: 20px 0; /* Stack with space on small screens */
+    margin: 20px 0;
+    max-width: none;
   }
 }

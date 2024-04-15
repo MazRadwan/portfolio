@@ -1,0 +1,30 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modalContent {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 2000;
+  width: 80vw; /* 80% of the viewport width */
+  max-width: 600px; /* maximum width */
+  height: auto; /* height to be determined by content */
+  min-height: 300px; /* minimum height */
+  /* Keep the rest of your styling */
+}
+@media (max-width: 768px) {
+  .modalContent {
+    width: 90vw; /* For smaller screens, the modal can take up more width */
+    max-width: none;
+    padding: 10px; /* Reduce padding on smaller screens if needed */
+  }
+}
