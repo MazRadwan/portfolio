@@ -1,0 +1,76 @@
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Other necessary styles */
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* Other necessary styles */
+}
+
+.modalTitle {
+  font-size: 3rem; /* Adjust as necessary */
+}
+
+.closeButton {
+  /* Styles for your close button */
+}
+
+.projectRow {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 20px 0; /* Spacing between the rows */
+}
+
+.projectBox {
+  width: calc(50% - 20px); /* Adjust based on desired spacing */
+  position: relative;
+  border-radius: 15px;
+  /* Other necessary styles */
+}
+
+.projectBox img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.projectOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* Other necessary styles */
+}
+
+.projectTitle {
+  /* Styles for the title inside the overlay */
+  color: white;
+}
+
+.previewButton {
+  border: 2px solid black; /* Adjust as necessary */
+  padding: 5px 10px; /* Adjust as necessary */
+  background-color: white; /* Adjust as necessary */
+  color: black; /* Adjust as necessary */
+  text-align: center; /* Adjust as necessary */
+  border-radius: 15px; /* Adjust as necessary */
+  margin-top: -3em; /* Adjust as necessary to position correctly */
+  align-self: center; /* Adjust as necessary */
+  /* Other necessary styles */
+}
+
+.previewButton:hover {
+  /* Styles for hover effect */
+  background-color: black; /* Adjust as necessary */
+  color: white; /* Adjust as necessary */
+}

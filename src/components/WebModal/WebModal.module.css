@@ -8,12 +8,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(100%); /* Start below the view */
-  transition: transform 1.5s ease-out;
+  transform: translateX(-100%); /* Start below the view */
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out,
+    visibility 0.5s ease-out;
+
   z-index: 2000;
 }
 .modalOverlay.active {
-  transform: translateY(0); /* End at the modal's final position */
+  transform: translateX(0); /* Slide in to final position from the left */
+  opacity: 1; /* Make the overlay visible */
+  visibility: visible; /* Make the overlay visible */
 }
 .modalContent {
   background-color: #fff;
