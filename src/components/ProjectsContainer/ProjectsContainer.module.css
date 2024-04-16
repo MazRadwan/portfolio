@@ -3,6 +3,7 @@
   flex-direction: row; /* Align children in a row */
   flex-wrap: wrap; /* Wrap children to the next line if needed */
   justify-content: space-evenly; /* Space around items */
+
   /* ...other styles... */
 }
 

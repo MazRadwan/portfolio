@@ -1,0 +1,74 @@
+.reactSection {
+  background-color: #e9f7f9;
+  display: flex;
+  justify-content: space-between; /* Adjust this as needed to align with the items above */
+  align-items: center;
+  padding: 10px 10px; /* Adjust the padding as needed */
+  max-width: 1300px;
+  margin: 0 auto; /* This will center the section in the viewport */
+  height: 400px; /* Set your desired height */
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.logoContainer {
+  flex: 1; /* Adjust this to give the container a flexible size, but it can shrink and grow */
+  display: flex; /* This makes sure the image inside will follow flex rules */
+  align-items: center; /* This will center the image vertically */
+  justify-content: center; /* This will center the image horizontally */
+  height: 100%;
+}
+
+.logo {
+  max-width: 100%; /* The image will be as wide as possible within the container */
+  max-height: 100%; /* The image will be as tall as possible within the container */
+  object-fit: contain; /* This will make sure the entire image is visible within the container */
+}
+.buttonContainer {
+  flex: 1;
+}
+
+.reactButton {
+  background-color: #51c2e0;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 5px; /* Adjust border-radius as you prefer */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reactButton:hover {
+  background-color: #2c7082;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reactSection {
+    flex-direction: column;
+    height: auto; /* Adjust height for stacked layout */
+  }
+  .buttonContainer {
+    width: 100%; /* Full width to ensure it's centered in the parent */
+    display: flex;
+    justify-content: center; /* Should center the button, but we'll add more */
+    padding: 0; /* Reset any padding that might affect centering */
+  }
+  .logoContainer,
+  .buttonContainer {
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 10px; /* Space between logo and button on small screens */
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

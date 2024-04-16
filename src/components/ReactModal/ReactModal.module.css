@@ -1,0 +1,55 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  width: 60%; /* Adjust based on your preference */
+  max-width: 800px; /* Adjust based on your preference */
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modalTitle {
+  font-size: 3rem; /* Adjust size as needed */
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.videoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.videoPlayer {
+  width: 100%; /* Make video responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.footer {
+  /* Adjust positioning as needed to line up with the video container */
+}
+
+.footerText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left; /* This centers the footer text */
+  /* Additional styling for the footer text */
+}
