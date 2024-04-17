@@ -8,12 +8,12 @@ const UIUXModalContent = ({ close }) => {
     {
       name: "Google Nest UI",
       img: googleNestImg,
-      link: "https://www.figma.com/proto/xosd00t21IGoxPhEkRhMFE/Nest-2024?page-id=0%3A1&type=design&node-id=1-2&viewport=454%2C141%2C0.45&t=fmWXfUsaAyJUjOgI-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design", // Add your actual link here
+      link: "https://www.figma.com/proto/xosd00t21IGoxPhEkRhMFE/Nest-2024?page-id=0%3A1&type=design&node-id=1-2&viewport=454%2C141%2C0.45&t=fmWXfUsaAyJUjOgI-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design",
     },
     {
       name: "E-Commerce UI",
       img: eCommerceImg,
-      link: "https://www.figma.com/proto/xiZ8Zig40XblAKdCTw3xK9/SteelandStubbleSprint?page-id=0%3A1&type=design&node-id=1-2&viewport=2442%2C-2398%2C0.5&t=RyIOA3ItLfF1FvjK-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design", // Add your actual link here
+      link: "https://www.figma.com/proto/xiZ8Zig40XblAKdCTw3xK9/SteelandStubbleSprint?page-id=0%3A1&type=design&node-id=1-2&viewport=2442%2C-2398%2C0.5&t=RyIOA3ItLfF1FvjK-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design",
     },
   ];
 

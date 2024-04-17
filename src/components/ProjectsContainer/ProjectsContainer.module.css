@@ -1,10 +1,8 @@
 .projectsContainer {
   display: flex;
-  flex-direction: row; /* Align children in a row */
-  flex-wrap: wrap; /* Wrap children to the next line if needed */
-  justify-content: space-evenly; /* Space around items */
-
-  /* ...other styles... */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* Responsive behavior */
@@ -16,5 +14,5 @@
 }
 .disableHover .uiuxBox:hover,
 .disableHover .webDesignBox:hover {
-  transform: none; /* Disable hover transforms when modal is open */
+  transform: none;
 }

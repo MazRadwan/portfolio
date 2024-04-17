@@ -14,8 +14,8 @@
 .modalContent {
   background-color: #fff;
   padding: 20px;
-  width: 60%; /* Adjust based on your preference */
-  max-width: 800px; /* Adjust based on your preference */
+  width: 60%;
+  max-width: 800px;
 }
 
 .modalHeader {
@@ -26,7 +26,7 @@
 }
 
 .modalTitle {
-  font-size: 3rem; /* Adjust size as needed */
+  font-size: 3rem;
 }
 
 .closeIcon {
@@ -39,17 +39,12 @@
 }
 
 .videoPlayer {
-  width: 100%; /* Make video responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.footer {
-  /* Adjust positioning as needed to line up with the video container */
+  width: 100%;
+  height: auto;
 }
 
 .footerText {
   font-size: 2rem;
   font-weight: bold;
-  text-align: left; /* This centers the footer text */
-  /* Additional styling for the footer text */
+  text-align: left;
 }

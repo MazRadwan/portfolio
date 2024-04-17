@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./WebModal.module.css";
-import WebModalContent from "../WebModalContent/WebModalContent"; // Make sure the path is correct
+import WebModalContent from "../WebModalContent/WebModalContent";
 
 const WebModal = ({ close, isOpen }) => {
   const modalRef = useRef();
 
-  // Close on click outside of modal
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
@@ -19,7 +18,7 @@ const WebModal = ({ close, isOpen }) => {
     };
   }, [close]);
 
-  if (!isOpen) return null; // Only render if isOpen is true
+  if (!isOpen) return null;
 
   return (
     <div className={`${styles.modalOverlay} ${isOpen ? styles.active : ""}`}>

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./ReactModal.module.css"; // Ensure the CSS module file path is correct
 import videoSource from "../../assets/react-demo.mp4"; // Update the path to your video file
 
-// Assume the onClose prop is a function passed down from the parent component
 const ReactModal = ({ onClose }) => {
   return (
     <div className={styles.modalOverlay}>

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ReactSection.module.css"; // make sure you have the corresponding CSS module file
+import styles from "./ReactSection.module.css";
 import logoImage from "../../assets/logo-react.png";
 
 const ReactSection = ({ onOpenModal }) => {
@@ -17,7 +17,6 @@ const ReactSection = ({ onOpenModal }) => {
   return (
     <div className={styles.reactSection}>
       <div className={styles.logoContainer}>
-        {/* Placeholder for the logo, replace 'path-to-your-logo.png' with your actual logo path */}
         <img src={logoImage} alt="Logo" className={styles.logo} />
       </div>
       <div className={styles.buttonContainer}>

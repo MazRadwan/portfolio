@@ -4,14 +4,14 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0; /* Start as invisible */
-  visibility: hidden; /* Start as hidden */
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.5s ease, visibility 0.5s ease;
-  z-index: 2000; /* Ensure this is above other content */
+  z-index: 2000;
 }
 
 .modalOverlay.active {
@@ -24,16 +24,15 @@
   border-radius: 15px;
   padding: 20px;
   z-index: 2000;
-  width: 80vw; /* 80% of the viewport width */
-  height: auto; /* Height determined by content */
-  min-height: 300px; /* Minimum height */
-  /* Add any other necessary styling for the modal content */
+  width: 80vw;
+  height: auto;
+  min-height: 300px;
 }
 
 @media (max-width: 768px) {
   .modalContent {
-    width: 90vw; /* More width on smaller screens */
+    width: 90vw;
     max-width: none;
-    padding: 10px; /* Adjust padding if necessary */
+    padding: 10px;
   }
 }

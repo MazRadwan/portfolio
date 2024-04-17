@@ -1,12 +1,11 @@
 /* WebDesignBox.module.css */
 .webDesignBox {
-  /* Remove the background-image property */
   background-size: cover;
   background-position: center;
   max-width: 600px;
   position: relative;
   margin: 10px;
-  /* transition: transform 0.3s; */
+
   flex: 1 auto;
   height: 500px;
   width: 300px;
@@ -14,8 +13,6 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
-
-  /* ... other styles ... */
 }
 .webDesignBox:hover {
   transform: translateY(-5px);
@@ -24,19 +21,19 @@
   transform: none;
 }
 .overlay {
-  padding: 10px 10px 0; /* This adds space inside the overlay, adjust as needed */
+  padding: 10px 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  margin: 0; /* Remove margin if you don't need space above the text */
-  padding-top: 10px; /* Add padding at the top if needed */
-  font-size: 16px; /* Adjust font size as needed */
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
 }
 .overlay h2 {
   font-family: "Inter", sans-serif;
-  font-weight: 600; /* Semi-bold for Inter */
-  text-align: left; /* Left-align the text */
+  font-weight: 600;
+  text-align: left;
   margin-bottom: 20px;
   color: #a271d4;
   margin-top: 0;
@@ -64,12 +61,12 @@
   background-color: #501e81;
 }
 .noHover:hover {
-  transform: none; /* This will disable the hover effect */
+  transform: none;
 }
 
 @media (max-width: 768px) {
   .webDesignBox {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
     margin: 20px 0;
     max-width: none;
   }

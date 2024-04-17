@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "./ProjectsContainer.module.css";
 import WebDesignBox from "../WebDesignBox/WebDesignBox";
 import UIUXBox from "../UIUXBox/UIUXBox";
-import WebModal from "../WebModal/WebModal"; // Make sure to import your modal components
-import UIUXModal from "../UIUXModal/UIUXModal"; // This should be the component that wraps UIUXModalContent and handles the overlay
+import WebModal from "../WebModal/WebModal";
+import UIUXModal from "../UIUXModal/UIUXModal";
 
 const ProjectsContainer = () => {
   const [isWebModalOpen, setIsWebModalOpen] = useState(false);
@@ -31,7 +31,6 @@ const ProjectsContainer = () => {
       {isUIUXModalOpen && (
         <UIUXModal isOpen={isUIUXModalOpen} close={toggleUIUXModal} />
       )}
-      {/* ... any other boxes or content ... */}
     </div>
   );
 };

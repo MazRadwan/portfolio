@@ -23,7 +23,7 @@ const HeroSlider = () => {
   useEffect(() => {
     slideInterval.current = setInterval(() => {
       setCurrentSlide((currentSlide) => (currentSlide + 1) % imageUrls.length);
-    }, 2000); // Change 2000 to the desired interval in milliseconds
+    }, 2000);
 
     // Cleanup on component unmount
     return () => clearInterval(slideInterval.current);

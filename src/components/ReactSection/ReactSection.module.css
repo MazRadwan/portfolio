@@ -1,28 +1,28 @@
 .reactSection {
   background-color: #e9f7f9;
   display: flex;
-  justify-content: space-between; /* Adjust this as needed to align with the items above */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 10px; /* Adjust the padding as needed */
+  padding: 10px 10px;
   max-width: 1300px;
-  margin: 0 auto; /* This will center the section in the viewport */
-  height: 400px; /* Set your desired height */
+  margin: 0 auto;
+  height: 400px;
   border-radius: 15px;
   margin-top: 30px;
 }
 
 .logoContainer {
-  flex: 1; /* Adjust this to give the container a flexible size, but it can shrink and grow */
-  display: flex; /* This makes sure the image inside will follow flex rules */
-  align-items: center; /* This will center the image vertically */
-  justify-content: center; /* This will center the image horizontally */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
 .logo {
-  max-width: 100%; /* The image will be as wide as possible within the container */
-  max-height: 100%; /* The image will be as tall as possible within the container */
-  object-fit: contain; /* This will make sure the entire image is visible within the container */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 .buttonContainer {
   flex: 1;
@@ -35,7 +35,7 @@
   font-size: 2rem;
   padding: 20px 50px;
   border: none;
-  border-radius: 5px; /* Adjust border-radius as you prefer */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 }
@@ -44,22 +44,21 @@
   background-color: #2c7082;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .reactSection {
     flex-direction: column;
-    height: auto; /* Adjust height for stacked layout */
+    height: auto;
   }
   .buttonContainer {
-    width: 100%; /* Full width to ensure it's centered in the parent */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Should center the button, but we'll add more */
-    padding: 0; /* Reset any padding that might affect centering */
+    justify-content: center;
+    padding: 0;
   }
   .logoContainer,
   .buttonContainer {
-    width: 100%; /* Full width for small screens */
-    margin-bottom: 10px; /* Space between logo and button on small screens */
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 @keyframes slideIn {

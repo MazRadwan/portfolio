@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./UIUXModal.module.css";
-import UIUXModalContent from "../UIUXModalContent/UIUXModalContent"; // Ensure this is the correct path
+import UIUXModalContent from "../UIUXModalContent/UIUXModalContent";
 
 const UIUXModal = ({ close, isOpen }) => {
   const modalRef = useRef();

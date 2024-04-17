@@ -3,39 +3,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Adjust the padding as needed */
+  padding: 1rem 2rem;
   font-family: "Inter", sans-serif;
 }
 
 .logo {
-  font-weight: 600; /* Semibold for the logo */
+  font-weight: 600;
 }
 
 .navLinks {
   display: flex;
-  gap: 1rem; /* Spacing between nav links */
+  gap: 1rem;
 }
 .navLink {
   text-decoration: none;
   color: #868686;
-  font-weight: 700; /* Bold for the links */
-  transition: color 0.3s; /* Smooth transition for color change */
+  font-weight: 700;
+  transition: color 0.3s;
 }
 .navLink:hover {
-  color: #51c2e0; /* Color change on hover */
+  color: #51c2e0;
 }
 
-/* For large screens */
 @media (min-width: 1024px) {
   .navLinks {
-    justify-content: flex-end; /* Keep the links aligned to the right */
-    max-width: 1600px; /* Increase max-width to push the navLinks a bit to the left */
-    margin-right: auto; /* Adjust right margin to push container to the left */
-    margin-left: 70%; /* Or any other percentage or fixed value */
+    justify-content: flex-end;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: 70%;
   }
 }
 
-/* Small screens adjustments */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -43,8 +41,8 @@
   }
   .navLinks {
     flex-direction: column;
-    align-items: center; /* Center align the stacked nav links */
-    width: 100%; /* Full width for small screens */
+    align-items: center;
+    width: 100%;
     margin-top: 20px;
   }
 }

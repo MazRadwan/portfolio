@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header/Header"; // Adjust the path as per your folder structure
+import Header from "./components/Header/Header";
 import HeroSlider from "./components/HeroSlider/HeroSlider";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import TechScroll from "./components/TechScroll/TechScroll";
@@ -19,7 +19,6 @@ const App = () => {
       <TechScroll />
       <ProjectsSection />
       <ProjectsContainer />
-
       <ReactCommonParent />
       <ContactMe />
       <Contact />

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ServiceSection.module.css"; // The name of your CSS module file
+import styles from "./ServiceSection.module.css";
 
 const ServiceSection = () => {
   return (

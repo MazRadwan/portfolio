@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./UIUXBox.module.css"; // Make sure to create a corresponding CSS module file
-import uiuxImage from "../../assets/flaticon-uiux.png"; // Replace with the actual path to your UI/UX image
+import styles from "./UIUXBox.module.css";
+import uiuxImage from "../../assets/flaticon-uiux.png";
 
 const UIUXBox = ({ onModalToggle }) => {
   return (

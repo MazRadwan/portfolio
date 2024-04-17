@@ -7,7 +7,6 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.logo}>MAZ RADWAN</div>
       <nav className={styles.navLinks}>
-        {/* Placeholder anchor tags */}
         <a href="#projects" className={styles.navLink}>
           PROJECTS
         </a>

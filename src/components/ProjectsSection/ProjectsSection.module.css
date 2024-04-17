@@ -1,23 +1,22 @@
 /* ProjectsSection.module.css */
 .projectsContainer {
   display: flex;
-  justify-content: space-between; /* Ensures maximum space between items */
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto; /* Center the container */
-  gap: 20px; /* This is the minimal gap between the boxes */
+  margin: 0 auto;
+  gap: 20px;
 }
 
 .projectsSection h2 {
   font-size: 3em;
-  padding-left: 20px; /* This can be adjusted as per the design requirements */
+  padding-left: 20px;
 }
 
-/* Media query for small screens, typically for screens smaller than 600px */
 @media (max-width: 768px) {
   .projectsContainer {
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Increase gap when stacking for better visual separation */
+    gap: 40px;
   }
 }

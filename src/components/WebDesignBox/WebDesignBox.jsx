@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import styles from "./WebDesignBox.module.css";
-import image from "../../assets/flaticon-web.png"; // Adjust the path as necessary
-import WebModal from "../WebModal/WebModal"; // Adjust the import path
+import image from "../../assets/flaticon-web.png";
+import WebModal from "../WebModal/WebModal";
 
 const WebDesignBox = ({ onModalToggle }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Inline style for the background image
   const backgroundStyle = {
     backgroundImage: `url(${image})`,
   };
 
-  // Function to toggle the modal open and closed
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
