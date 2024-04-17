@@ -4,14 +4,14 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 50px 0;
-  padding-bottom: 200px; /* Adjust based on the space needed below the button and icon */
+  padding-bottom: 200px;
 }
 
 .contactBox {
   flex: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Aligns the button and icon vertically */
+  align-items: center;
 }
 
 .contactButton {
@@ -31,7 +31,7 @@
 }
 
 .linkedinIcon {
-  font-size: 4em; /* Adjust size to match the button height */
+  font-size: 4em;
   color: #51c2e0;
   margin-left: -180px;
   transition: color 0.2s ease-in-out;
@@ -49,7 +49,7 @@
 @media (max-width: 768px) {
   .contactContainer {
     flex-direction: column;
-    align-items: center; /* Centers the button and icon */
+    align-items: center;
   }
   .contactBox {
     flex-direction: column;

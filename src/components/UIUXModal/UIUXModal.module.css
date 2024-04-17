@@ -25,7 +25,6 @@
   padding: 20px;
   z-index: 2000;
   width: 80vw; /* 80% of the viewport width */
-  max-width: 600px; /* Maximum width */
   height: auto; /* Height determined by content */
   min-height: 300px; /* Minimum height */
   /* Add any other necessary styling for the modal content */

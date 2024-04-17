@@ -2,15 +2,15 @@
 .footer {
   text-align: left;
   color: #6f6f6f;
-  padding: 20px 0; /* Adjust the padding as needed */
+  padding: 20px 0;
   max-width: 1300px;
   margin: auto;
-  font-size: 1rem; /* Adjust the size as needed */
+  font-size: 1rem;
 }
 
 .footerText {
-  display: block; /* This can also be inline-block, depending on your layout */
-  padding-left: 20px; /* Align with the content above, adjust as necessary */
+  display: block;
+  padding-left: 20px;
 }
 
 /* For the responsive part */
@@ -19,6 +19,6 @@
     text-align: center;
   }
   .footerText {
-    padding-left: 0; /* Remove padding on smaller screens */
+    padding-left: 0;
   }
 }
