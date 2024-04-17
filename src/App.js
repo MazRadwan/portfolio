@@ -5,8 +5,10 @@ import ServiceSection from "./components/ServiceSection/ServiceSection";
 import TechScroll from "./components/TechScroll/TechScroll";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import ProjectsContainer from "./components/ProjectsContainer/ProjectsContainer";
-import ReactSection from "./components/ReactSection/ReactSection";
 import ReactCommonParent from "./components/ReactCommonParent/ReactCommonParent";
+import ContactMe from "./components/ContactMe/ContactMe";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,7 +21,9 @@ const App = () => {
       <ProjectsContainer />
 
       <ReactCommonParent />
-      <ServiceSection />
+      <ContactMe />
+      <Contact />
+      <Footer />
     </div>
   );
 };

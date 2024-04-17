@@ -25,7 +25,7 @@
   padding: 20px;
   z-index: 2000;
   width: 80vw; /* 80% of the viewport width */
-  max-width: 600px; /* maximum width */
+
   height: auto; /* height to be determined by content */
   min-height: 300px; /* minimum height */
   /* Keep the rest of your styling */

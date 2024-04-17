@@ -1,0 +1,24 @@
+/* Footer.module.css */
+.footer {
+  text-align: left;
+  color: #6f6f6f;
+  padding: 20px 0; /* Adjust the padding as needed */
+  max-width: 1300px;
+  margin: auto;
+  font-size: 1rem; /* Adjust the size as needed */
+}
+
+.footerText {
+  display: block; /* This can also be inline-block, depending on your layout */
+  padding-left: 20px; /* Align with the content above, adjust as necessary */
+}
+
+/* For the responsive part */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footerText {
+    padding-left: 0; /* Remove padding on smaller screens */
+  }
+}
