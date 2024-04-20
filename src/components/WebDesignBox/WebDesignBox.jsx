@@ -1,25 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import styles from "./WebDesignBox.module.css";
 import image from "../../assets/flaticon-web.png";
 import WebModal from "../WebModal/WebModal";
+import { motion } from "framer-motion";
+import { slideInFromLeftVariants } from "../../utils/animationvariants";
 
-const WebDesignBox = ({ onModalToggle }) => {
+const WebDesignBox = forwardRef(({ onModalToggle, isVisible }, ref) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const backgroundStyle = {
-    backgroundImage: `url(${image})`,
-  };
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
 
+  const backgroundStyle = {
+    backgroundImage: `url(${image})`,
+  };
+
   return (
-    <div
+    <motion.div
+      ref={ref} // Assign ref here
       className={`${styles.webDesignBox} ${
         isModalOpen ? styles.disableHover : ""
       }`}
       style={backgroundStyle}
+      initial="offscreen"
+      animate={isVisible ? "onscreen" : "offscreen"}
+      variants={slideInFromLeftVariants}
     >
       <div className={styles.overlay}>
         <h2>WEB DESIGN</h2>
@@ -34,8 +40,8 @@ const WebDesignBox = ({ onModalToggle }) => {
         </button>
       </div>
       {isModalOpen && <WebModal close={toggleModal} isOpen={isModalOpen} />}
-    </div>
+    </motion.div>
   );
-};
+});
 
 export default WebDesignBox;
